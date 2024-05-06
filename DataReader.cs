@@ -32,5 +32,17 @@ public static class DataReader
 
 
     }
+    public static Lista CsvToListaPeople(string path)
+    {
+        var StringList = CsvToStringList(path);
+        var peopleList = new Lista();
+        foreach (string people in StringList)
+        {
+            peopleList.Add(new People(people));
+        }
+        return peopleList;
+
+
+    }
 
 }

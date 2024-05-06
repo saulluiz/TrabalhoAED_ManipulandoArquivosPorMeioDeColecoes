@@ -9,6 +9,9 @@ foreach(var x in listaPessoas){
     Console.WriteLine(x.ToString());
 }
  */
- 
-  var data=  DataReader.CsvToPeopleList("Data/people-10000.csv");
-  Console.WriteLine(data[0].ToString());
+  
+  var data=  DataReader.CsvToListaPeople("Data/people-100.csv");
+  Console.WriteLine(data.Remove(99).ToString()); 
+  var data2=  DataReader.CsvToPeopleList("Data/people-100.csv");
+  Console.WriteLine(data2[99].ToString());
+    data.imprimir();

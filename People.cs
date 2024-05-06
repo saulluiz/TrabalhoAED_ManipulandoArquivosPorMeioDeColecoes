@@ -25,6 +25,18 @@ public class People
     this.DateOfBirth = dateOfBirth;
     this.JobTitle = jobTitle;
   }
+  public People(int index)
+  {
+    this.Index = index;
+    this.UserId = null;
+    this.FirtName = null;
+    this.LastName = null;
+    this.Sex = null;
+    this.Email = null;
+    this.Phone = null;
+    this.DateOfBirth = null;
+    this.JobTitle = null;
+  }
 
   public People(string people)
   {
