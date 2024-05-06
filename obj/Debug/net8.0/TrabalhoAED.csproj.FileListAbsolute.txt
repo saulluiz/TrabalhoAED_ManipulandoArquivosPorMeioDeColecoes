@@ -12,3 +12,4 @@ C:\Users\saulo\OneDrive\Área de Trabalho\TrabalhoAED\obj\Debug\net8.0\refint\Tr
 C:\Users\saulo\OneDrive\Área de Trabalho\TrabalhoAED\obj\Debug\net8.0\TrabalhoAED.pdb
 C:\Users\saulo\OneDrive\Área de Trabalho\TrabalhoAED\obj\Debug\net8.0\TrabalhoAED.genruntimeconfig.cache
 C:\Users\saulo\OneDrive\Área de Trabalho\TrabalhoAED\obj\Debug\net8.0\ref\TrabalhoAED.dll
+C:\Users\saulo\OneDrive\Área de Trabalho\TrabalhoAED\obj\Debug\net8.0\TrabalhoAED.sourcelink.json
