@@ -3,7 +3,7 @@ public class Celula
 {
     public Celula prox;
     public People value;
-    public Celula(People value=null)
+    public Celula(People? value =null)
     {
         this.prox = null;
         this.value = value;
@@ -22,7 +22,7 @@ public class Lista
         this.count = 0;
 
     }
-    public void InserirInicio(People value=null)
+    public void InserirInicio(People? value =null)
     {
         if (primeiro == ultimo)
         {
@@ -37,12 +37,12 @@ public class Lista
         count++;
 
     }
-    public void inserirVazio(People value=null)
+    public void inserirVazio(People? value=null)
     {
         primeiro.prox = new Celula(value);
         ultimo = primeiro.prox;
     }
-    public void Add(People value=null)
+    public void Add(People? value =null)
     {
         if (primeiro == ultimo)
         {
