@@ -3,7 +3,7 @@ public class Celula
 {
     public Celula prox;
     public People value;
-    public Celula(People? value =null)
+    public Celula(People? value = null)
     {
         this.prox = null;
         this.value = value;
@@ -14,7 +14,18 @@ public class Lista
     Celula primeiro, ultimo;
     int count;
 
+    public Celula this[int index]
+    {
+        get { return elementoNaPosicao(index); }
+    }
+    private Celula elementoNaPosicao(int pos)
+    {
+        Celula aux = primeiro.prox;
+        for (int i = 0; i != pos; i++,aux=aux.prox) ;
+        return aux;
 
+
+    }
     public Lista()
     {
         primeiro = new Celula();
@@ -22,7 +33,7 @@ public class Lista
         this.count = 0;
 
     }
-    public void InserirInicio(People? value =null)
+    public void InserirInicio(People? value = null)
     {
         if (primeiro == ultimo)
         {
@@ -37,12 +48,12 @@ public class Lista
         count++;
 
     }
-    public void inserirVazio(People? value=null)
+    public void inserirVazio(People? value = null)
     {
         primeiro.prox = new Celula(value);
         ultimo = primeiro.prox;
     }
-    public void Add(People? value =null)
+    public void Add(People? value = null)
     {
         if (primeiro == ultimo)
         {
