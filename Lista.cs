@@ -12,11 +12,11 @@ public class Celula
 public class Lista
 {
     Celula primeiro, ultimo;
-    int count;
+   public int count;
 
-    public Celula this[int index]
+    public People this[int index]
     {
-        get { return elementoNaPosicao(index); }
+        get { return elementoNaPosicao(index).value; }
     }
     private Celula elementoNaPosicao(int pos)
     {
@@ -100,6 +100,7 @@ public class Lista
         }
 
     }
+
     public People Remove(int pos)
     {
         if (pos < 0 || pos > count - 1)
@@ -116,7 +117,7 @@ public class Lista
         }
 
         Celula j = primeiro;
-        for (int i = 0; i < pos; i++, j = j.prox) ;
+        for (int i = 1; i < pos; i++, j = j.prox) ;
         aux = j.prox;
         j.prox = j.prox.prox;
         if (pos == count - 1)
@@ -130,5 +131,13 @@ public class Lista
 
 
 
+    }
+    public People removeFim(){
+
+       return Remove(count-1);
+
+    }
+    public People removeinicio(){
+       return Remove(0);
     }
 }
