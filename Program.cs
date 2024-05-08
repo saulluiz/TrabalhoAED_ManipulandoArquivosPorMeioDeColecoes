@@ -35,4 +35,8 @@ data.Add(new People(data.count,"a","b","c","d","e","f","g","asdasd"));
 data.Add(new People(data.count,"a","b","c","d","e","f","g","asdasd"));
 Console.WriteLine(data.count);
 System.Console.WriteLine(data[102].ToString());
+Console.WriteLine(data.count);
+System.Console.WriteLine("__________________________________________________");
+data.InserirInicio(new People(111,"a","b","c","d","e","f","g","asdasd"));
 data.imprimir();
+Console.WriteLine(data.count);
